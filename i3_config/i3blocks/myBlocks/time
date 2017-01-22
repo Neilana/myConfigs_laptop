@@ -1,0 +1,10 @@
+#!/bin/bash
+
+HOURS=$(date +'%H')
+MIN=$(date +'%M')
+
+if [[ $HOURS = "00" && $MIN = "00" ]]; then
+	pkill -RTMIN+9 i3blocks
+fi
+
+echo "<span color='#EBD1B7'>$HOURS:$MIN</span>"

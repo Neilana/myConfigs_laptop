@@ -1,0 +1,52 @@
+# File: /usr/share/cmus/MyTheme2.theme
+
+##### Common User Interface Components #########################################
+# Default text color
+set color_win_fg=yellow
+
+# Overall background color
+set color_win_bg=black
+
+# Command-line colors
+set color_cmdline_bg=black
+set color_cmdline_fg=yellow
+set color_error=lightyellow
+set color_info=yellow
+set color_separator=yellow
+
+# Bottom status line
+set color_statusline_bg=black
+set color_statusline_fg=yellow
+
+# Bottom title line
+set color_titleline_bg=yellow
+set color_titleline_fg=black
+
+# Top title area
+set color_win_title_bg=yellow
+set color_win_title_fg=black
+##### Playing File Colors ######################################################
+# Unselected currently playing track's text
+set color_win_cur=lightyellow
+
+# Active selection for currently playing track
+set color_win_cur_sel_bg=28
+set color_win_cur_sel_fg=darkgray
+
+# Inactive selection for currently playing track
+set color_win_inactive_cur_sel_bg=20
+set color_win_inactive_cur_sel_fg=lightyellow
+
+##### Non-Playing File Colors ##################################################
+# Active selection
+set color_win_sel_bg=yellow
+set color_win_sel_fg=black
+
+# Inactive selection
+set color_win_inactive_sel_bg=20
+set color_win_inactive_sel_fg=black
+
+##### File Browser View Colors #################################################
+# Directory listing color
+set color_win_dir=lightyellow
+

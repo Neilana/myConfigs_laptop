@@ -1,0 +1,17 @@
+Git rep dir: 
+	~/MyFiles/MyPrograms/myConfig
+
+Copying files and dirs:
+	/usr/lib/i3blocks/
+		i3config.conf
+		myblocks
+
+	~/.config/i3/config
+
+	~/.Xresources
+
+	~/.config/ranger/colorscheme/MyTheme.py
+
+	~/.xinitric
+
+	~/.config/sublime-text-3/Packages/Colorsublime-Themes/MyTheme.tmTheme

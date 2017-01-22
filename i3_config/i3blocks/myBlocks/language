@@ -1,0 +1,5 @@
+#!/bin/bash
+
+LANGUAGE=$(xkb-switch)
+
+echo "<span color='#EBD1B7'>$LANGUAGE</span>"

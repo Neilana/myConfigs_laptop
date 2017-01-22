@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+
+CAPS_STATUS=$(xset -q | grep Caps | awk '{ print $4 }')
+
+#CAPS off
+if [[ ${CAPS_STATUS} = "off" ]]; then
+    COLOR="#7D6F67"
+    CAPS_SHOW="caps"
+
+# CAPS on
+else
+    COLOR="#FFD29E"
+    CAPS_SHOW="CAPS"
+fi
+
+echo "<span color='$COLOR'>$CAPS_SHOW</span>"

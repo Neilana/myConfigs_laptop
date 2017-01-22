@@ -1,0 +1,13 @@
+#!/bin/bash
+
+ARTIST=$(cmus-remote -Q | grep ' artist ' | cut -d ' ' -f3-)
+TITLE=$(cmus-remote -Q | grep title | cut -d ' ' -f3-)
+if [[ $ARTIST != "" ]]; then
+  OUTPUT=$ARTIST
+fi
+
+if [[ $TITLE != "" ]]; then
+  OUTPUT="$OUTPUT - $TITLE"
+fi
+
+echo "<span color='#EBD1B7'>"$OUTPUT"</span>"

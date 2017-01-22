@@ -1,0 +1,31 @@
+#!/bin/bash
+
+#()
+
+DATE=$(date +'%A %d %b %Y')
+
+# get current month
+MONTH=$(date +'%m')
+
+# between March and May 
+if [[ $MONTH -ge 3 && $MONTH -le 5 ]]; then
+  IMAGE=""
+  COLOR="#00ff00" #lime color ^__^
+
+# between June and August
+elif [[ $MONTH -ge 6 && $MONTH -le 8 ]]; then
+  IMAGE=""
+  COLOR="#ffff66"
+
+# between September and November 
+elif [[ $MONTH -ge 9 && $MONTH -le 11 ]]; then
+  IMAGE=""
+  COLOR="#ff6600"
+
+# between December and February
+else
+  IMAGE=""
+  COLOR="#66ccff"
+fi
+
+echo "<span color='$COLOR'>$IMAGE</span> <span color='#EBD1B7'>$DATE</span>"

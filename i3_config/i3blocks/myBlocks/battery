@@ -1,0 +1,43 @@
+#!/bin/bash
+# https://github.com/Anachron/i3blocks/blob/master/blocks/battery
+# edited by ztreis
+
+BATTERY=0
+BATTERY_INFO=$(acpi -b | grep "Battery ${BATTERY}")
+BATTERY_STATE=$(echo "${BATTERY_INFO}" | grep -wo "Full\|Charging\|Discharging")
+BATTERY_POWER=$(echo "${BATTERY_INFO}" | grep -o '[0-9]\+%' | tr -d '%')
+
+REMAINING_TIME=$(echo "${BATTERY_INFO}" | grep -o "..:..:..")
+
+URGENT_VALUE=10
+
+# suppose battery is full; color=green, image=full
+COLOR="#93C95D" 
+IMAGE=""
+
+if [[ $BATTERY_POWER -ge 50 && $BATTERY_POWER -le 75 ]]; then
+  # color is still green
+  IMAGE=""
+elif [[ $BATTERY_POWER -ge 25 && $BATTERY_POWER -le 50 ]]; then
+  COLOR="#C9B35D" # color=orange
+  IMAGE=""
+elif [[ $BATTERY_POWER -ge 20 && $BATTERY_POWER -le 40 ]]; then
+  COLOR="#BF4545" # color=red
+  IMAGE=""
+elif [[ $BATTERY_POWER -le 20 ]]; then
+  COLOR=#"BF4545" # color=super red (anyway not distinguishable) :)
+  IMAGE=""
+fi
+
+if [[ "${BATTERY_STATE}" = "Charging" ]]; then 
+  COLOR="#93C95D"
+fi
+
+case $BLOCK_BUTTON in
+  1) echo "<span color='$COLOR' >${REMAINING_TIME}</span>";;
+  *) echo "<span color='$COLOR'>$IMAGE ${BATTERY_POWER}%</span>";;
+esac
+
+if [[ "${BATTERY_POWER}" -le "${URGENT_VALUE}" ]]; then
+  exit 33
+fi
