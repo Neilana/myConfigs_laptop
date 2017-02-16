@@ -2,6 +2,7 @@
 
 # 1. i3 configuration
 cp i3_config/config ~/.config/i3/
+cp i3_config/wallpaper.jpg ~/.config/i3/
 
 cp i3_config/i3blocks/i3blocks.conf /usr/lib/i3blocks/
 cp i3_config/i3blocks/myBlocks/* /usr/lib/i3blocks/myBlocks/
