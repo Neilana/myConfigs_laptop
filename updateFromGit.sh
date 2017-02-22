@@ -9,6 +9,10 @@ mkdir -p /usr/lib/i3blocks/myBlocks
 cp i3_config/i3blocks/i3blocks.conf /usr/lib/i3blocks/
 cp i3_config/i3blocks/myBlocks/* /usr/lib/i3blocks/myBlocks/
 
+mkdir -p ~/.fonts
+cp i3_config/fonts/* ~/.fonts/
+
+
 # 2. Startup configs
 cp startup_config/.xinitrc ~/
 
@@ -26,5 +30,5 @@ mkdir -p  ~/.config/ranger/colorschemes/
 cp appsColors_config/ranger/MyTheme.py ~/.config/ranger/colorschemes/
 
 # cmus theme (nned to "colorscheme Mytheme2" in cmus to refresh theme (even if the theme is the same))
-mkdir -p/usr/share/cmus/
+mkdir -p /usr/share/cmus/
 cp appsColors_config/cmus/MyTheme2.theme /usr/share/cmus/

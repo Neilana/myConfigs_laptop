@@ -32,7 +32,7 @@ font pango:Cantarell 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
+bindsym $mod+Return exec --no-startup-id "TERMINAL=xterm i3-sensible-terminal"
 bindsym $mod+Shift+i exec --no-startup-id chromium
 bindsym $mod+Shift+s exec --no-startup-id subl3
 bindsym $mod+Shift+f exec --no-startup-id thunar
@@ -225,6 +225,10 @@ set $border-color        #5E4D3A
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run -fn Cabtrall -nb "$bg-color" -nf "$inactive-text-color" -sf "$text-color" -sb "$border-color"
+
+
+# my QT program
+for_window [class="wordscounter_project" instance="wordscounter_project"] floating enableW
 
 
 focus_follows_mouse no
