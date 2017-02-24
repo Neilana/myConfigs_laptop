@@ -8,6 +8,10 @@
 alias ls='ls --color=auto'
 #PS1='[\u@\h \W]\$ '
 
+alias wcnt="cd ~/Dropbox/repos/wordscounter/"
+alias mailru="cd /home/neilana/Dropbox/Studying/Programming/courses/MailRu/code/"
+
+
 source ~/git/contrib/completion/git-prompt.sh
 
 #export PS1='[\u@\h \W]$(__git_ps1 "(%s)")\$ '

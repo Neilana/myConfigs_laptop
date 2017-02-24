@@ -2,7 +2,7 @@
 
 # 1. i3 configuration
 mkdir -p ~/.config/i3/
-cp i3_config/config/* ~/.config/i3/
+cp i3_config/* ~/.config/i3/
 
 mkdir -p /usr/lib/i3blocks/myBlocks
 cp i3_config/i3blocks/i3blocks.conf /usr/lib/i3blocks/
