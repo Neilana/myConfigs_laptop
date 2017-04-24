@@ -9,7 +9,8 @@ alias ls='ls --color=auto'
 #PS1='[\u@\h \W]\$ '
 
 alias wcnt="cd ~/Dropbox/repos/wordscounter/"
-alias mailru="cd /home/neilana/Dropbox/Studying/Programming/courses/MailRu/code/"
+alias tatom="cd /home/neilana/Dropbox/programs/cpp/technoatom_cpp/"
+alias asm="cd /home/neilana/TASM/labs"
 
 
 source ~/git/contrib/completion/git-prompt.sh

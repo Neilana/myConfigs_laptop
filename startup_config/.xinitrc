@@ -47,4 +47,5 @@ fi
 xrandr --output HDMI1 --mode 1920x1080_60.00 --pos 0x0 --rotate normal --output LVDS1 --off --output VIRTUAL1 --off --output DP1 --off --output VGA1 --off
 
 dropbox &
+parcellite -n & # to copy-paste from xterm
 exec i3
