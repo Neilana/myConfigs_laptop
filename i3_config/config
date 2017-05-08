@@ -49,7 +49,7 @@ bindsym --release Caps_Lock exec --no-startup-id pkill -SIGRTMIN+11 i3blocks
 
 # Switching between languages (I switch by Cntrl+Shift) 
 # I have my keyboard settings in /etc/X11/xorg.conf.d/00-keyboard.conf
-#bindsym --release exec --no-startup-id pkill -RTMIN+8 i3blocks
+#bindsym --release Control+Shift exec --no-startup-id pkill -RTMIN+8 i3blocks
 
 # kill focused window
 bindsym $mod+Shift+q kill
